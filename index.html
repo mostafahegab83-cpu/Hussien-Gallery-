@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hussien Gallery — Contemporary Art Platform</title>
+  <meta name="description" content="Discover exhibitions, artists, artworks, and editorial programs through a refined contemporary gallery experience." />
+  <meta property="og:title" content="Hussien Gallery — Contemporary Art Platform" />
+  <meta property="og:description" content="Discover exhibitions, artists, artworks, and editorial programs through a refined contemporary gallery experience." />
+  <meta property="og:image" content="assets/hero-artwork.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div data-header></div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="hero-copy-inner">
+          <p class="eyebrow">Contemporary art platform</p>
+          <h1 class="hero-title">Hussien Gallery</h1>
+          <p class="hero-summary">Collecting, exhibiting, and elevating contemporary voices from the region through ambitious shows, artist stories, and carefully curated works.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#exhibition">View current exhibition</a>
+            <a class="btn btn-outline" href="#artworks">Browse artworks</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/hero-artwork.jpg" alt="Abstract contemporary artwork in warm gold tones" />
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about-inner">
+        <div class="about-mark">
+          <div>
+            <small>Contemporary</small>
+            <span>MA</span>
+            <small>Gallery</small>
+          </div>
+        </div>
+        <p class="about-text">Hussien Gallery serves as a platform for presenting original, serious, and promising contemporary artistic practices with an emphasis on openness, cultural exchange, and long-term artistic value. The gallery builds meaningful relationships between collectors, artists, and visitors through exhibitions, talks, and curatorial programs that celebrate the vitality of the regional art scene.</p>
+      </div>
+    </section>
+
+    <section id="exhibition">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Curated selection</p>
+          <h2>Current Exhibition</h2>
+          <p>A selective presentation of installation views, collector previews, and curatorial framing.</p>
+        </div>
+        <div class="grid exhibition-grid">
+          <article class="card exhibition-card">
+            <img src="assets/gallery-interior-1.jpg" alt="Thresholds of Memory exhibition view" />
+            <div class="card-body">
+              <p class="label">Current Exhibition</p>
+              <h3>Thresholds of Memory</h3>
+              <p>An immersive group exhibition exploring gesture, symbolism, and material memory through painting, sculpture, and mixed media.</p>
+            </div>
+          </article>
+          <article class="card exhibition-card">
+            <img src="assets/hero-artwork.jpg" alt="Collectors Preview" />
+            <div class="card-body">
+              <p class="label">Collectors Preview</p>
+              <h3>Private Walkthrough</h3>
+              <p>A guided presentation of selected works for patrons, curators, and institutional partners.</p>
+            </div>
+          </article>
+        </div>
+        <div class="center">
+          <a class="btn btn-outline" href="exhibitions.html">View current exhibition →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="artworks" class="alt-bg">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Curated selection</p>
+          <h2>Artworks</h2>
+          <p>The same core browsing experience, reimagined with a more polished commercial identity and cleaner visual hierarchy.</p>
+        </div>
+        <div class="grid grid-4" data-artworks></div>
+        <div class="center">
+          <a class="btn btn-outline" href="artworks.html">View all artwork</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Curated selection</p>
+          <h2>Artists</h2>
+          <p>Featured artists are presented with the same familiar options in a stronger editorial frame.</p>
+        </div>
+        <div class="grid grid-4" data-artists></div>
+        <div class="center">
+          <a class="btn btn-outline" href="artists.html">View all artists</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt-bg">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Curated selection</p>
+          <h2>Press</h2>
+          <p>Coverage, commentary, and critical attention around the gallery program and represented practices.</p>
+        </div>
+        <div class="grid grid-4" data-press></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Curated selection</p>
+          <h2>Videos</h2>
+          <p>Walkthroughs and artist features provide another access point into the exhibition program.</p>
+        </div>
+        <div class="grid grid-3" data-videos></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="partials.js"></script>
+  <script src="data.js"></script>
+  <script>
+    renderShell();
+    renderArtworks(document.querySelector('[data-artworks]'));
+    renderArtists(document.querySelector('[data-artists]'));
+    renderPress(document.querySelector('[data-press]'));
+    renderVideos(document.querySelector('[data-videos]'));
+  </script>
+  <script src="firebase-config.js"></script>
+  <script type="module" src="booking.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

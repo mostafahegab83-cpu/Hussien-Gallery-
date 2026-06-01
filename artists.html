@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Artists — Hussien Gallery</title>
+  <meta name="description" content="Meet the contemporary artists represented and featured by Hussien Gallery." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div data-header></div>
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <p class="eyebrow">Roster</p>
+        <h1>Artists</h1>
+        <p>Featured practitioners across painting, sculpture, photography, and mixed media.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="grid grid-4" data-artists></div>
+      </div>
+    </section>
+  </main>
+  <div data-footer></div>
+  <script src="partials.js"></script>
+  <script src="data.js"></script>
+  <script>renderShell(); renderArtists(document.querySelector('[data-artists]'));</script>
+  <script src="firebase-config.js"></script>
+  <script type="module" src="booking.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

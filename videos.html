@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Videos — Hussien Gallery</title>
+  <meta name="description" content="Exhibition walkthroughs and artist conversations from Hussien Gallery." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div data-header></div>
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <p class="eyebrow">Media</p>
+        <h1>Videos</h1>
+        <p>Walkthroughs, artist features, and collector notes from the gallery program.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="grid grid-3" data-videos></div>
+      </div>
+    </section>
+  </main>
+  <div data-footer></div>
+  <script src="partials.js"></script>
+  <script src="data.js"></script>
+  <script>renderShell(); renderVideos(document.querySelector('[data-videos]'));</script>
+  <script src="script.js"></script>
+</body>
+</html>
